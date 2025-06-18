@@ -13,7 +13,7 @@ os.environ['PYTHONHASHSEED'] = str(seed)
 cosineLR = True  # whether use cosineLR or not
 n_channels = 3
 n_labels = 1
-epochs = 300
+epochs = 150
 img_size = 512
 print_frequency = 1
 save_frequency = 5000
@@ -50,4 +50,4 @@ visualize_path = save_path + 'visualize_val/'
 local_rank = os.getenv('LOCAL_RANK', -1)
 
 # used in testing phase, copy the session name in training phase
-test_session = "Test_session_10.13_00h12"
+test_session = "Test_session"

@@ -35,10 +35,10 @@ num_workers =4
 # model_name = 'BaseLine'
 # model_name = 'BaseLine_PSC'
 model_name = 'BaseLine_PSC_RCM'
-
-train_dataset = '../CHN6-CUG/' + '/train/'
-val_dataset = '../CHN6-CUG/' + '/test/'
-test_dataset = '../CHN6-CUG/' + '/test/'
+if task_name == 'CHN6-CUG':
+    train_dataset = '../CHN6-CUG/' + '/train/'
+    val_dataset = '../CHN6-CUG/' + '/test/'
+    test_dataset = '../CHN6-CUG/' + '/test/'
 session_name = 'Test_session' + '_' + time.strftime('%m.%d_%Hh%M')
 save_path = task_name + '/' + model_name + '/' + session_name + '/'
 model_path = save_path + 'models/'

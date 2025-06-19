@@ -36,9 +36,15 @@ num_workers =4
 # model_name = 'BaseLine_PSC'
 model_name = 'BaseLine_PSC_RCM'
 if task_name == 'CHN6-CUG':
-    train_dataset = '../CHN6-CUG/' + '/train/'
-    val_dataset = '../CHN6-CUG/' + '/test/'
-    test_dataset = '../CHN6-CUG/' + '/test/'
+    train_dataset = '.dataset/CHN6-CUG/' + '/train/'
+    val_dataset = '.dataset/CHN6-CUG/' + '/test/'
+    test_dataset = '.dataset/CHN6-CUG/' + '/test/'
+elif task_name == 'DeepGlobe':
+    train_dataset = '.dataset/DeepGlobe/' + '/train/'
+    val_dataset = '.dataset/DeepGlobe/' + '/test/'
+    test_dataset = '.dataset/DeepGlobe/' + '/test/'
+else:
+    raise Exception('datasets in not right!')
 session_name = 'Test_session' + '_' + time.strftime('%m.%d_%Hh%M')
 save_path = task_name + '/' + model_name + '/' + session_name + '/'
 model_path = save_path + 'models/'

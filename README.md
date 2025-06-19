@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![PyTorch](https://img.shields.io/badge/framework-PyTorch-blue)
 
-**PSDE-Net** PSDE-Net is a deep learning network designed for road extraction from remote sensing images. It addresses the challenges of accurately extracting road features, especially slender and winding roads, and ensuring road connectivity. The method incorporates a dual encoder structure and parallel strip convolutions, significantly improving road feature extraction and connectivity.<br>
+**PSDE-Net** is a deep learning network designed for road extraction from remote sensing images. It addresses the challenges of accurately extracting road features, especially slender and winding roads, and ensuring road connectivity. The method incorporates a dual encoder structure and parallel strip convolutions, significantly improving road feature extraction and connectivity.<br>
 **The corresponding paper is currently under review for publication in the journal _Computers and Geosciences_.**
 
 ## 🔍 Overview
@@ -36,3 +36,31 @@ We use two publicly available datasets to evaluate the performance of PSDE-Net:
 ### 1. [DeepGlobe Road Extraction Dataset](http://deepglobe.org/challenge.html)
 ### 2. [CHN6-CUG Road Dataset](https://grzy.cug.edu.cn/zhuqiqi/zh_CN/yjgk/32368/list/index.htm)
 > Please ensure your dataset is organized in the following directory structure:
+```
+dataset/
+├── DeepGlobe/
+│ ├── train/
+│ │ ├── image/ # training images (e.g., .png or .jpg)
+│ │ └── label/ # corresponding binary masks
+│ └── test/
+│ ├── image/ # test images
+│ └── label/ # test masks
+├── CHN6-CUG/
+│ ├── train/
+│ │ ├── image/
+│ │ └── label/
+│ └── test/
+│ ├── image/
+│ └── label/
+```
+
+## 📈 Training
+```bash
+python train_model.py
+```
+## 🧪 Evaluation
+```bash
+python test_model.py
+```
+## 📝 License
+This project is licensed under the MIT License. See LICENSE for more information.

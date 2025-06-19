@@ -1,0 +1,14 @@
+numpy~=1.26.3
+torch~=2.1.1+cu118
+argparse~=1.4.0
+fvcore~=0.1.6
+einops~=0.8.0
+timm~=1.0.9
+tqdm~=4.66.5
+torchsummary~=1.5.1
+torchvision~=0.16.1+cu118
+packaging~=24.1
+setuptools~=75.1.0
+wheel~=0.44.0
+pytest~=8.3.3
+pillow~=10.2.0

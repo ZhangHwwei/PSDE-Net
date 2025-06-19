@@ -30,5 +30,9 @@ conda activate psdenet
 
 # Install dependencies
 pip install -r requirements.txt
-
-## 🛠️ Installation
+```
+## 📁 Dataset
+We use two publicly available datasets to evaluate the performance of PSDE-Net:
+### 1. [DeepGlobe Road Extraction Dataset](http://deepglobe.org/challenge.html)
+### 2. [CHN6-CUG Road Dataset](https://grzy.cug.edu.cn/zhuqiqi/zh_CN/yjgk/32368/list/index.htm)
+> Please ensure your dataset is organized in the following directory structure:

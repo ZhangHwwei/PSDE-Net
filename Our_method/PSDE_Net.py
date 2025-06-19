@@ -289,7 +289,7 @@ class BaseLine_PSC(nn.Module):
         out = self.conv1(d4)
         return torch.sigmoid(out)
 
-
+# PSDE-NET
 class BaseLine_PSC_RCM(nn.Module):
     def __init__(self, num_classes=1):
         super(BaseLine_PSC_RCM, self).__init__()

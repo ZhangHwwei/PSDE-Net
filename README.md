@@ -4,7 +4,7 @@
 ![PyTorch](https://img.shields.io/badge/framework-PyTorch-blue)
 
 **PSDE-Net** is a deep learning network designed for road extraction from remote sensing images. It addresses the challenges of accurately extracting road features, especially slender and winding roads, and ensuring road connectivity. The method incorporates a dual encoder structure and parallel strip convolutions, significantly improving road feature extraction and connectivity.<br>
-**The corresponding paper is currently under review for publication in the journal _   _.**
+**The corresponding paper is currently under review for publication in the journal _Int. J. Modelling, Identification and Control_.**
 
 ## 🔍 Overview
 
